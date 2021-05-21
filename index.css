@@ -1,0 +1,39 @@
+div {
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    margin: auto;
+    width: 60%;
+    font-size: 30px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.grid-item-1 {
+    grid-column: 1/6;
+    grid-row: 1/4;
+    text-align: center;
+    border: 2px solid black;
+    background-color: red;
+    padding: 50px;
+}
+
+.grid-item-2, .grid-item-3, .grid-item-4 {
+    background-color: orange;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.grid-item-5 {
+    grid-column: 1/6;
+    grid-row: 4/5;
+    background-color: yellow;
+}
+.grid-item-6 {
+    background-color: blue;
+    padding: 50px;
+    border-top: 2px solid black;
+}
